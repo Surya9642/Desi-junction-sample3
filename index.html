@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desi Junction Eatery serves authentic Indian street-to-table cuisine with online ordering, chef recommendations, gallery, and warm hospitality." />
+  <meta name="theme-color" content="#B54830" />
+  <meta property="og:title" content="Desi Junction Eatery | Authentic Indian Street-to-Table" />
+  <meta property="og:description" content="Modern, vibrant Indian dining built for cravings, celebrations, and easy online ordering." />
+  <meta property="og:type" content="website" />
+  <title>Desi Junction Eatery | Authentic Indian Street-to-Table</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Desi Junction Eatery home"><span>DJ</span><strong>Desi Junction<br><em>Eatery</em></strong></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="order-btn" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  </header>
+  <main>
+    <section id="home" class="hero" aria-label="Featured Desi Junction stories">
+      <article class="slide active" data-bg="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1800&h=1200&q=82">
+        <div class="hero-copy reveal"><p class="eyebrow">Street-to-table Indian dining</p><h1>Where Every Bite Tells an Indian Story</h1><p>Authentic recipes, timeless flavors, unforgettable experiences.</p><div class="actions"><a class="btn primary" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online →</a><a class="btn ghost" href="#menu">View Menu →</a></div></div>
+      </article>
+      <article class="slide" data-bg="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&h=1200&q=82">
+        <div class="hero-copy reveal"><p class="eyebrow">Hospitality served family-style</p><h1>Gather Around Authentic Indian Hospitality</h1><p>Fresh ingredients, warm service, and moments worth sharing.</p><div class="actions"><a class="btn primary" href="#gallery">Explore Gallery →</a><a class="btn ghost" href="#about">Learn More →</a></div></div>
+      </article>
+      <article class="slide" data-bg="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=1800&h=1200&q=82">
+        <div class="hero-copy reveal"><p class="eyebrow">Slow-cooked flavor, fast online ordering</p><h1>Crafted With Tradition. Served With Passion.</h1><p>From dum biryanis to handcrafted curries, discover the taste of home.</p><div class="actions"><a class="btn primary" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online →</a><a class="btn ghost" href="#menu">Explore Menu →</a></div></div>
+      </article>
+      <div class="hero-controls"><button class="prev" aria-label="Previous slide">‹</button><button class="next" aria-label="Next slide">›</button></div>
+      <div class="progress" aria-label="Carousel progress"><button class="active" aria-label="Go to slide 1"></button><button aria-label="Go to slide 2"></button><button aria-label="Go to slide 3"></button></div>
+    </section>
+
+    <section class="featured"><div class="section-intro reveal"><p class="eyebrow">Featured categories</p><h2>A journey through India’s most beloved tables</h2><p>Each plate is styled with restraint, built with memory, and served with the confidence of a modern neighborhood favorite.</p></div><div id="categoryRows"></div></section>
+    <section class="recommend"><div class="section-intro reveal"><p class="eyebrow">Chef’s recommendations</p><h2>Dishes guests keep coming back for</h2></div><div class="dish-rail" id="dishRail"></div></section>
+
+    <section id="about" class="about-preview"><div class="about-media reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=1300&h=1500&q=82" alt="Indian spices and cooking ingredients"></div><div class="about-text reveal"><p class="eyebrow">Our story</p><h2>Bringing the Soul of India to Every Table</h2><p>Desi Junction Eatery is rooted in family traditions, hand-ground spice memories, and the belief that hospitality should feel generous from the first welcome to the final bite.</p><p>Our kitchen celebrates regional Indian cooking with fresh ingredients, patient technique, and a lively dining room designed for sharing.</p><a class="btn primary" href="#about-page">Read Our Story →</a></div></section>
+
+    <section class="testimonials reveal"><div class="section-intro"><p class="eyebrow">Guest experiences</p><h2>Warm words from our table</h2></div><div class="quote-box" id="quotes"></div></section>
+    <section id="gallery" class="gallery-preview"><div class="section-intro reveal"><p class="eyebrow">Gallery</p><h2>Food, celebrations, and kitchen moments</h2></div><div class="masonry" id="galleryPreview"></div><a class="btn secondary center" href="#gallery-page">Explore Gallery →</a></section>
+    <section class="conversion"><h2>Craving Authentic Indian Cuisine Tonight?</h2><p>Skip the wait and order your favorites online.</p><a class="btn dark" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online →</a></section>
+
+    <section class="page-hero" id="about-page" style="background-image:linear-gradient(90deg, rgba(44,34,29,.72), rgba(44,34,29,.18)), url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1800&h=1000&q=82)"><div class="reveal"><p class="eyebrow">Desi Junction Eatery</p><h1>Rooted in Tradition, Inspired by Community</h1><p>A modern Indian eatery shaped by family recipes, neighborhood warmth, and a devotion to honest flavor.</p></div></section>
+    <section class="editorial"><div><p class="eyebrow">Restaurant journey</p><h2>From beloved recipes to a gathering place</h2></div><div><p>Desi Junction Eatery was created as a meeting point between Indian street-food energy and the comfort of home-style cooking. We draw inspiration from bustling spice markets, family kitchens, and the generosity of shared meals.</p><p>Our culinary philosophy is simple: use fresh ingredients, treat spices with respect, cook with patience, and welcome every guest like family.</p></div></section>
+    <section class="pillars"><article class="pillar reveal"><h3>Authenticity</h3><p>Recipes honor Indian regional traditions and layered spice technique.</p></article><article class="pillar reveal"><h3>Freshness</h3><p>Ingredients are prepared with care for vivid flavor and color.</p></article><article class="pillar reveal"><h3>Family</h3><p>Meals are designed for connection, celebration, and comfort.</p></article><article class="pillar reveal"><h3>Excellence</h3><p>Every detail, from service to plating, is shaped by pride.</p></article></section>
+
+    <section class="page-hero" id="menu" style="background-image:linear-gradient(90deg, rgba(44,34,29,.72), rgba(44,34,29,.18)), url(https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1800&h=1000&q=82)"><div class="reveal"><p class="eyebrow">Desi Junction Eatery</p><h1>Explore Our Menu</h1><p>Browse elevated Indian favorites, then order online when craving turns into dinner plans.</p></div></section>
+    <section class="menu-browser"><div class="tabs" id="menuTabs" role="tablist"></div><div class="menu-grid" id="menuGrid"></div></section><a class="floating-order" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online</a>
+
+    <section class="page-hero" id="gallery-page" style="background-image:linear-gradient(90deg, rgba(44,34,29,.72), rgba(44,34,29,.18)), url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1800&h=1000&q=82)"><div class="reveal"><p class="eyebrow">Desi Junction Eatery</p><h1>A Feast for the Eyes</h1><p>Browse our food photography, restaurant ambiance, celebrations, and behind-the-scenes kitchen craft.</p></div></section>
+    <section><div class="filters" id="galleryFilters"></div><div class="masonry" id="galleryGrid"></div></section>
+
+    <section class="page-hero" id="contact" style="background-image:linear-gradient(90deg, rgba(44,34,29,.72), rgba(44,34,29,.18)), url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1800&h=1000&q=82)"><div class="reveal"><p class="eyebrow">Desi Junction Eatery</p><h1>We’d Love to Welcome You</h1><p>Visit us for a memorable meal, call with a question, or send a note for celebrations and catering.</p></div></section>
+    <section class="contact-layout"><div class="contact-info reveal"><h2>Plan your visit</h2><p>📍 123 Spice Market Lane, Bellevue, WA</p><p>☎️ (425) 555-0198</p><p>✉️ hello@desijunctioneatery.com</p><p>🕒 Mon–Thu 11am–9pm · Fri–Sun 11am–10pm</p><iframe title="Google Map for Desi Junction Eatery" loading="lazy" src="https://www.google.com/maps?q=Bellevue%20WA&output=embed"></iframe></div><form class="contact-form reveal"><label>Name<input required name="name"></label><label>Email<input required type="email" name="email"></label><label>Phone<input name="phone"></label><label>Message<textarea required name="message" rows="5"></textarea></label><button class="btn primary" type="submit">Send Message</button><p class="success" hidden>Thank you — your message has been received.</p></form></section>
+  </main>
+  <footer class="footer"><div><a class="brand footer-brand" href="#home"><span>DJ</span><strong>Desi Junction<br><em>Eatery</em></strong></a><p>A vibrant Indian street-to-table experience serving soulful recipes, fresh spices, and generous hospitality.</p><a class="btn gold" href="https://desijunctioneaterywa.cloveronline.com/menu/all">Order Online</a></div><div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div><div><h3>Contact</h3><p>123 Spice Market Lane<br>Bellevue, WA</p><p>(425) 555-0198</p><p>hello@desijunctioneatery.com</p></div><div><h3>Hours</h3><p>Mon–Thu 11am–9pm<br>Fri–Sun 11am–10pm</p><div class="social" aria-label="Social media">◎ f ▶</div></div></footer>
+  <div class="lightbox" hidden><button aria-label="Close image">×</button><img alt="Expanded gallery image"></div>
+  <script src="/src/app.js" defer></script>
+</body>
+</html>
