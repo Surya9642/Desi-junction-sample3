@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "python3 - <<'PY'\nfrom pathlib import Path\nfor p in ['index.html','src/styles.css','src/app.js']:\n    assert Path(p).exists(), p\nprint('static assets present')\nPY"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
